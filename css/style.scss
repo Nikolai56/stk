@@ -196,8 +196,8 @@ $breakpoints: (
 ) !default;
 $main-text: #3c3c3c;
 $secondary-text: #96a0aa;
-$main-color: #e53935;
-$main-hover: #d32f2f;
+$main-color: #043670;
+$main-hover: lighten($main-color, 15%);
 $button-outline: #d7d7d7;
 
 //mixins
@@ -492,7 +492,7 @@ sup {
 			width: 8px;
 			left: 8px;
 			top: 8px;
-			background-color: #e53935;
+			background-color: $main-color;
 			border-radius: 50%;
 			content: "";
 		}
@@ -554,6 +554,16 @@ sup {
 	@include media("<=tablet") {
 		margin-right: 20px;
 	}
+}
+
+.header__logo {
+  background-color: white;
+  margin-right: 30px;
+  width: 160px;
+
+  @include media("<=tablet") {
+    margin-right: 20px;
+  }
 }
 
 .header-adress {
@@ -620,7 +630,7 @@ sup {
 	margin-left: 30px;
 	height: 55px;
 	min-width: 180px;
-	background: none;
+	background-color: white;
 	color: $main-color;
 	border-radius: 3px;
 	border: 1px solid $button-outline;
@@ -951,7 +961,7 @@ sup {
 
 .price-block__title {
 	width: 100%;
-	background-color: #e53935;
+	background-color: $main-color;
 	border-radius: 4px 4px 0 0;
 	color: white;
 	font-size: 14px;
