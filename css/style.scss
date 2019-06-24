@@ -234,7 +234,7 @@ $button-outline: #d7d7d7;
 	line-height: 1.2;
 
 	&:after {
-		content: url(../img/logo.png);
+		content: url(../img/logo.svg);
 	}
 
 	@include media("<=tablet") {
