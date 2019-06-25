@@ -1,5 +1,4 @@
 # editor configs
 .idea
 node_modules
-package.json
 yarn.lock

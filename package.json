@@ -1,0 +1,23 @@
+{
+  "name": "stk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --output-style compressed css/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolai56/stk.git"
+  },
+  "author": "Nikolai56",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nikolai56/stk/issues"
+  },
+  "homepage": "https://github.com/Nikolai56/stk#readme"
+}
