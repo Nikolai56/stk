@@ -41,32 +41,12 @@ $(function() {
 	});
 
 	$('form').on('submit', function() {
-		var gtm = $(this).data('gtm');
-		gtm && window.dataLayer && dataLayer.push({ event: gtm });
 		$('.popup-wrapper').css('display', 'none');
 		$('.popup-tnx').parent().css('display', 'flex');
 		setTimeout(function() {
-			$('.popup-tnx').parent().fadeOut(1000);
+      $('.popup-tnx').parent().fadeOut(1000);
+      // $(this).find('input:not([type=hidden]):not([type=submit])').val('');
 		}, 5000);
-
-		var data = $(this).serialize();
-		if (/utm_source=yandex_direct/.test(window.location.href) || /utm=yandex_direct/.test(document.cookie)) {
-			data += '&utm=yandex';
-		}
-		if (/utm_source=google/.test(window.location.href) || /utm=google/.test(document.cookie)) {
-			data += '&utm=google';
-		}
-		$.ajax({
-			url: '/php/send.php',
-			method: 'post',
-			data: data,
-			timeout: 5000
-		}).done(function(data) {
-			$(this).find('input:not([type=hidden])').val('');
-		}).fail(function() {
-			console.log('send fail');
-		});
-		return false;
 	});
 
 	$('.js-reviews__list').magnificPopup({
