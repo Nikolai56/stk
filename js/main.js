@@ -33,7 +33,8 @@ $(function() {
 	$('.sect2-mats-item-order').on('click', function() {
 		var mat = $(this).parent().find('.sect2-mats-item-title').text();
 		$('.popup-buy').parent().css('display', 'flex')
-			.find('.label--select span').text(mat);
+      .find('.label--select select').val(mat)
+      .parent().find('span').text(mat);
 	});
 
 	$('.checkQuality').on('click', function() {
