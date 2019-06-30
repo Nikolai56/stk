@@ -48,12 +48,4 @@ $(function() {
       // $(this).find('input:not([type=hidden]):not([type=submit])').val('');
 		}, 5000);
 	});
-
-	$('.js-reviews__list').magnificPopup({
-		delegate: '.reviews__item',
-		type: 'image',
-		gallery: {
-			enabled: true
-		}
-	});
 });
